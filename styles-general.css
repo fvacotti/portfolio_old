@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Raleway:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* General */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    color: #f6f6f6;
+}
+
+html {
+    scroll-behavior: smooth;
+    transition-duration: 500ms;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.bold-italic{
+    font-weight: 700;
+    font-style: italic;
+}
+
+body {
+    background-color: #131313;
+    /* background-image: url(img/img-fond.png); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 75px;
+    box-sizing: border-box;
+}
+
+ul li {
+    margin-top: 20px;
+}
+
+li a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: "Fascinate", sans-serif;
+    font-size: 2em;
+    animation: focus-in-expand 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes focus-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+h2 {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 0.8em;
+    margin-top: 20px;
+}
+
+h4{
+    font-size: 1.5em;
+    /* margin-top: 20px; */
+}
+
+p {
+    font-size: 1em;
+    margin-top: 20px;
+    line-height: 1.6em;
+    /* letter-spacing: .5pt; */
+}
+
+/* Barra redes sociales */
+
+.social {
+    position: fixed;
+    left: 0;
+    top: 150px;
+    z-index: 900;
+}
+
+.social ul {
+    list-style: none;
+
+}
+
+.social ul li a {
+    display: inline-block;
+    color: #f6f6f6;
+    background-color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: all 500ms ease;
+}
+
+.social ul li a:hover {
+    padding: 10px 30px;
+}
+
+.social ul li .icon-facebook:hover {
+    background-color: #3b5998;
+}
+
+.social ul li .icon-instagram:hover {
+    background-color: #e1306c;
+}
+
+.social ul li .icon-twitter:hover {
+    background-color: #00acee;
+}
+
+.social ul li .icon-telegram:hover {
+    background-color: #0088cc;
+}
+
+.social ul li .icon-behance:hover {
+    background-color: #053eff;
+}
+
+/* Header */
+
+.header {
+    background-color: #559184;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+}
+
+/* Nav header */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+nav a {
+    color: #f6f6f6;
+}
+
+.logo {
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-menu {
+    display: flex;
+    margin-right: 40px;
+}
+
+.nav-menu-item {
+    font-size: 0.8em;
+    margin: 0 10px;
+    line-height: 70px;
+    width: max-content;
+}
+
+.nav-menu-link {
+    padding: 8px 12px;
+    position: relative;
+    /* border-radius: 25px; */
+}
+
+.nav-menu-link:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #f6f6f6;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 500ms ease-in-out;
+}
+
+.nav-menu-link:hover:after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+/* Hamburguesa */
+
+.nav-toggle {
+    color: #f6f6f6;
+    background: none;
+    border: none;
+    font-size: 2em;
+    padding: 0 40px;
+    line-height: 70px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Estilos generales trabajos */
+
+.title {
+    padding: 5%;
+    width: 60%;
+    margin: 0 auto;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.descrip h1 {
+    text-align: center;
+}
+
+.descrip p {
+    text-align: left;
+}
+
+.back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 35%;
+    margin: 0 auto 5%;
+}
+
+.back p {
+    text-align: center;
+    margin: 0;
+}
+
+.back p a{
+    text-decoration: none;
+}
+
+.back-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 70px;
+    background-color: #559184;
+    border-radius: 50px;
+}
+
+.back-link:hover{
+    width: 60%;
+    transition: 500ms;
+    background-color: #2b4942;
+}
+
+/* Footer */
+
+footer{
+    width: 100%;
+    height: 130px;
+    background-color: #bbd3ce;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.data ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+}
+
+.data ul li{
+    margin-top: 0;
+}
+
+.data ul li a{
+    padding: 8px 12px;
+    color: #000000;
+    margin: 0 20px;
+    position: relative;
+}
+
+.data ul li a:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #000000;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 500ms ease-in-out;
+}
+
+.data ul li a:hover:after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.copy p{
+    font-size: 0.8em;
+    font-weight: 700;
+    color: #000000;
+    margin-top: 30px;
+}
+
+/* Responsive */
+
+@media (max-width:1200px) {
+    .back{
+        width: 60%;
+    }    
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        margin-right: 0;
+        width: 100%;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        padding: 20px 0;
+        background-color: #559184;
+        align-items: flex-end;
+        margin-right: 120px;
+        height: calc(100% - 70px);
+        overflow-y: auto;
+        left: 100%;
+        transition: left .5s;
+        font-size: 1.5em;
+    }
+
+    .nav-menu-item {
+        margin-right: 120px;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu_visible {
+        left: 0;
+    }
+
+    .social{
+        display: none;
+    }
+
+    footer{
+        height: 200px;
+    }
+
+    .data ul{
+        flex-direction: column;
+    }
+
+    .data ul li{
+        margin: 10px 0
+    }
+
+    /* Responsive Trabajos */
+
+    .back{
+        flex-direction: column;
+        gap: 30px;
+        width: 90%;
+    }
+}
