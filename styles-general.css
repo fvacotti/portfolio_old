@@ -394,4 +394,8 @@ footer{
         gap: 30px;
         width: 90%;
     }
+
+    .title {
+        width: 80%;
+    }
 }
