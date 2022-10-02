@@ -243,6 +243,9 @@ main {
 }
 
 @media (max-width:768px) {
+    main{
+        width: 80%;
+    }
     .ficha {
         display: none;
     }
@@ -267,4 +270,29 @@ main {
         display: grid;
         grid-column: 1/5;
     }
+    .ai h3{
+        display: none;
+    }
+    .ps h3{
+        display: none;
+    }
+    .id h3{
+        display: none;
+    }
+    .dw h3{
+        display: none;
+    }
+
+    .fb h3{
+        display: none;
+    }
+    .ig h3{
+        display: none;
+    }    
+    .tw h3{
+        display: none;
+    }    
+    .be h3{
+        display: none;
+    }        
 }
